@@ -7,7 +7,7 @@ const Favourites = () => {
   const favourites = useSelector(
     (state: RootState) => state.favourites.favourites
   );
-  const uniqueIngredients = new Set<string>();
+  const uniqueIngredients = new Set<string | undefined | boolean>();
 
   favourites.forEach((meal) => {
     for (let i = 1; i <= 20; i++) {

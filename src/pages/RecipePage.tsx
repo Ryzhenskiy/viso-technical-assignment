@@ -14,7 +14,8 @@ const RecipePage = () => {
 
   function handleAddTofavourites() {
     setIsFavorite(!isFavorite);
-    dispatch(addFavourite(meal));
+
+    dispatch(addFavourite(meal!));
   }
 
   useEffect(() => {
