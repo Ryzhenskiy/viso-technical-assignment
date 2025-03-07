@@ -29,7 +29,7 @@ const Pagination: React.FC<PaginationProps> = ({
             }`}
             onClick={() => changePage(page)}
           >
-            {page}
+            {page < 7 ? page : currentPage}
           </button>
         )
       )}

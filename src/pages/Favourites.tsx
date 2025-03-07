@@ -12,6 +12,7 @@ const Favourites = () => {
   favourites.forEach((meal) => {
     for (let i = 1; i <= 20; i++) {
       const ingredient = meal[`strIngredient${i}` as keyof typeof meal];
+
       if (ingredient) uniqueIngredients.add(ingredient);
     }
   });
@@ -44,6 +45,22 @@ const Favourites = () => {
                 </div>
               ))}
             </div>
+          </div>
+
+          <div className="mt-6 m-2">
+            <h2 className="text-xl font-semibold text-center">Instructions</h2>
+
+            {favourites.map((meal, index) => (
+              <div>
+                <h1 className="text-xl font-semibold">{meal.strMeal}</h1>
+                <div
+                  key={index}
+                  className="border  bg-white shadow-lg rounded-md p-2 mb-2 text-start"
+                >
+                  {meal.strInstructions}
+                </div>
+              </div>
+            ))}
           </div>
         </>
       )}
