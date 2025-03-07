@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { fetchMealsBySearch, getAllMeals } from '../services/api';
-import { Meal, Category } from '../types/meal';
-import { Link } from 'react-router-dom';
+import { Meal } from '../types/meal';
+
 import RecipeCard from '../components/RecipeCard';
 import Pagination from '../components/Pagination';
 
