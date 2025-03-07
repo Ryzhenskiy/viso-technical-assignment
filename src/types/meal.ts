@@ -5,5 +5,5 @@ export interface Meal {
   strCategory: string;
   strInstructions: string;
   strArea: string;
-  isFavorite?: boolean;
 }
+

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { fetchMealsBySearch, getAllMeals } from '../services/api';
 import { Meal } from '../types/meal';
+import { Category } from '../types/category';
 
 import RecipeCard from '../components/RecipeCard';
 import Pagination from '../components/Pagination';
